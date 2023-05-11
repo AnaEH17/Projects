@@ -6,17 +6,16 @@
     list-style: none;
 }
 
+
 body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    background-image: url("./assets/img/ba1.jpg");
+    background-image: url("../assets/img/ba1.jpg");
     background-size: cover;
 }
 
-
-
-div#vacio {
+div#scroll {
     width: 100%;
     height: 600px;
 
@@ -40,19 +39,22 @@ div#body {
     position: fixed;
     width: 100%;
     z-index: 50;
+   
 }
 
 
 .masthead {
     position: absolute;
-    width: auto;
-    max-width: 100%;
     height: auto;
     min-height: 35rem;
     padding: 5rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bsas.jpg");
     background-position: center;
+    max-width: 100%;
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-image: url("../assets/img/ba1.jpg");
+    background-size: cover;
 }
 
 .masthead h1,
@@ -61,7 +63,7 @@ div#body {
     font-size: 4.5rem;
     line-height: 4.5rem;
     letter-spacing: 0.8rem;
-    background: linear-gradient(rgba(232, 236, 238, 0.9), #cfcccc00);
+    background: linear-gradient(rgba(232, 236, 238, 0.9), rgba(195, 198, 199, 0.9));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -69,7 +71,9 @@ div#body {
 
 .masthead h2,
 .masthead .h2 {
-    max-width: 40rem;
+    max-width: 45rem;
     font-size: 1rem;
+    
+    
 }
 
