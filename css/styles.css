@@ -18,27 +18,26 @@ h1 {
 }
 
 p-header {
-  font-size: 18px;
+  font-size: 40px;
   color: white;
   line-height: 1.8;
   margin-bottom: 0;
 }
 
-
-
 .navbar {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(68, 66, 66);
   box-shadow: 0 2px 4px 0 black;
   min-height: 100px;
 
 }
 
 .nav-link {
-  color: rgb(247, 243, 243);
+  font-size: 18px;
+  color: rgb(248, 248, 248);
 }
 
 .nav-link:hover {
-  background: linear-gradient(rgb(159, 179, 204), rgba(201, 194, 194, 0));
+  background: linear-gradient(rgb(253, 218, 152), rgba(201, 194, 194, 0));
 }
 
 
@@ -199,6 +198,26 @@ p-header {
   max-width: 50px;
   text-align: center;
 }
+
+.divaider {
+  border-bottom: 1px solid rgb(245, 236, 236)
+}
+
+.footer li a{
+  font-size: 18px;
+  color: rgb(109, 106, 106);
+  text-decoration: none;
+
+}
+
+.footer {
+  color: white;
+  font-size: 18px;
+}
+
+.topmargin-xs {margin-top: 15px;}
+.topmargin-sm {margin-top: 30px;}
+.topmargin-lg {margin-top: 60px;}
 
 @media (max-width: 575.98px) {
   h1 {
