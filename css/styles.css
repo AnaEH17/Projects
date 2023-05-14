@@ -1,115 +1,220 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 
 body {
-    font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-h1{ font-size: 66px; font-weight: 600; line-height: 80px;}
+h1 {
+  font-size: 66px;
+  font-weight: 600;
+  line-height: 80px;
+}
 
-p{
-    font-size: 18px;
-    color:white;
-    line-height: 1.8;
-    margin-bottom: 0;
+p-header {
+  font-size: 18px;
+  color: white;
+  line-height: 1.8;
+  margin-bottom: 0;
 }
 
 
 
-.navbar{
-    background-color: rgb(17, 17, 17);
-    box-shadow: 0 2px 4px 0 black;
-    min-height: 100px;
+.navbar {
+  background-color: rgb(17, 17, 17);
+  box-shadow: 0 2px 4px 0 black;
+  min-height: 100px;
 
-   }
+}
 
 .nav-link {
-    color: rgb(247, 243, 243);
+  color: rgb(247, 243, 243);
 }
 
 .nav-link:hover {
-    background: linear-gradient(rgb(216, 185, 9), rgba(201, 194, 194, 0));
+  background: linear-gradient(rgb(159, 179, 204), rgba(201, 194, 194, 0));
 }
 
 
-.nav-item{
-    font-size: 15px;
-    
+.nav-item {
+  font-size: 15px;
+
 }
 
 
 .navbar-brand img {
-    max-width: 120px;
-    max-height: 100px;
+  max-width: 120px;
+  max-height: 100px;
+}
+
+#header {
+  background-image: url("../assets/img/ba3.jpg");
+  background-size: cover;
+  padding-top: 90px;
+  min-height: 700px;
+  color: white;
+
+}
+
+.conter-center {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.btn-header {
+  font-size: 14px;
+  padding: 15px 26px;
+  min-width: 160px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: transparent;
+  color: rgb(253, 253, 255);
+  border-color: white;
+}
+
+
+.btn-header:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-icon ion-icon {
+  font-size: 14px;
+  margin-left: 5px;
+  color: blue;
+}
+
+.textoCard {
+  font-size: .9rem;
+  color: gray;
+  line-height: 1.3rem;
+}
+
+.conter-center {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.portafolio-container {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 2px;
+
+
+}
+
+.portafolio-container img {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: scale(1.2);
+}
+
+.portafolio-container:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+
+}
+
+.portafolio-details h2 {
+  margin-bottom: 0px;
+}
+
+.portafolio-details {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 9000;
+
+
+}
+
+.portafolio-details a h2,
+.portafolio-details a p {
+  color: white;
+
+}
+
+.text-dark {
+  color: black
+}
+
+.fondo {
+  background-color: grey;
+}
+
+.img-m {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item {
+  min-height: 240px;
+  padding: 40px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.carousel-item p {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+.rating li {
+  color: #ffb944;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: calc(50% - 250px);
+  word-spacing: 18px;
+}
+
+.testimonials-user {
+  max-width: 240px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials-user h6 {
+  margin-bottom: 0px;
+}
+
+.testimonials-user span {
+  font-size: 12px;
+}
+
+.testimonials-user img {
+  border-radius: 50%;
+  max-width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal;
   }
+}
 
 
-  #header {
-    background-image: url("../assets/img/ba3.jpg");
-    background-size: cover;
-    padding-top: 90px;
-    min-height: 700px;
-    color: white;
-
-  }
-
-  .conter-center{
-    max-width:800px;
-    margin: 0 auto 60px auto;
-    text-align: center;
-  }
-
-  .btn-header {
-    font-size:14px;
-    padding: 15px 26px;
-    min-width: 160px;
-    border-radius: 4px;
-    display:inline-block;
-    background-color: transparent;
-    color: rgb(253, 253, 255);
-    border-color: white; }
-    
-
-    .btn-header:hover{
-       background-color:white;
-       color: black;
-    }
-
-  .btn-icon ion-icon{
-    font-size: 14px;
-    margin-left: 5px;
-    color:blue;
-  }
-
-  .textoCard{
-    font-size: .9rem;
-    color: gray;
-    line-height: 1.3rem;
-  }
+@media (max-width: 767.98px) {}
 
 
-
-@media (max-width: 575.98px) { 
-    h1 {
-        font-size:40px; line-height: normal ;
-    }
- }
+@media (max-width: 991.98px) {}
 
 
-@media (max-width: 767.98px) { }
+@media (max-width: 1199.98px) {}
 
 
-@media (max-width: 991.98px) {  }
-
-
-@media (max-width: 1199.98px) {  }
-
-
-@media (max-width: 1399.98px) { }
-
+@media (max-width: 1399.98px) {}
