@@ -10,8 +10,6 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
-
   <!--Google Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +20,17 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/styles.css" />
   <title>Document</title>
 </head>
 
 <body>
   <section id="nav">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-dark  " data-bs-theme="dark">
       <div class="container-fluid">
         <img src="./assets/img/codoacodo.png" alt="c" width="100px">
         <span class="fs-5">Conf BsAS</span>
@@ -44,7 +46,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#codoacodo">Conferencia</a>
+              <a class="nav-link" href="#lugar">Lugar y Fecha</a>
             </li>
             <li class="nav-item">
               <a href="#comprar" class="nav-link">Compra tu entrada</a>
@@ -66,7 +68,7 @@
           expertos que están creando el futuro de internet. Ven a conocer a
           miembros del evento, a otros estudiantes de Codo a Codo y los
           oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-        <a href="#" class="btn-header btn-icon ">Orador<ion-icon name="arrow-down-circle-sharp"></ion-icon></a>
+        <a href="#" class="btn btn-icon ">Orador<ion-icon name="arrow-down-circle-sharp"></ion-icon></a>
       </div>
       <div>
   </section>
@@ -113,7 +115,7 @@
     </div>
   </section>
 
-  <section id="codoacodo">
+  <section>
     <div class="row conter-centery">
       <div class="conter-center ">
         <div class="col-md p-5 mb-0">
@@ -130,9 +132,42 @@
       </div>
   </section>
 
-  <section id="testimonials" class="divaider">
-    <div class="container p-0">
+  <section id="lugar" class="divaider">
+    <div class="row conter-centery">
       <div class="conter-center">
+        <button id="btn1" class="btn btn-primary d-grid gap-2 col-6 mx-auto mb-5">Programa - Ubicacion</button>
+        <div id="modal" class="modal face" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Programa Codo a Codo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p><br>Oradores 4.0</br></p>
+                <ul class="list-group">
+                  <li class="list-group-item">Desayuno de Cortesia, Comienzo del Evento - 09:00 am </li>
+                  <li class="list-group-item">Ingreso a la sala de conferencia -Introducion de los Beneficios de las
+                    Nuevas Tecnologias, aplicadas al negocio. </li>
+                  <li class="list-group-item">Desarrollo de fundamentos de los Oradores.</li>
+                  <li class="list-group-item">Evaluacion y formulacion de repuestas de los participantes de la sala.
+                  </li>
+                  <li class="list-group-item">Cierre final - Autografiado de libros</li>
+                </ul>
+                <H3> Lunes 15 de Mayo - Universidad Tecnologica 4.0 - BsAs</H3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+  <section id="testimonials" class="divaider">
+    <div class="container">
+      <div class="conter-center mt-3">
         <h2>Testimonios</h2>
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -238,55 +273,59 @@
 
   </section>
 
-<section>
-  <div class="container " id="comprar">
-    <div class="fs-3 text-center my-3" id="titulo">Consigue tu entrada para la conferencia <b>CodoaCodo</b> con los Oradores mas destacados en tecnologia.</div>
-    <form action="#" method="post">
-      <div class="row mx-5">
-        <div class="col-md mb-3">
-          <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
+  <section>
+    <div class="container " id="comprar">
+      <div class="fs-3 text-center my-3" id="titulo">Consigue tu entrada para la conferencia <b>CodoaCodo</b> con los
+        Oradores mas destacados en tecnologia.</div>
+      <form action="#" method="post">
+        <div class="row mx-5">
+          <div class="col-md mb-3">
+            <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
+          </div>
+          <div class="col-md mb-3">
+            <input type="text" name="apellido" id="apellido" class="form-control" required placeholder="Apellido">
+          </div>
         </div>
-        <div class="col-md mb-3">
-          <input type="text" name="apellido" id="apellido" class="form-control" required placeholder="Apellido">
-        </div>
-      </div>
 
-      <div class="row mx-5">
-        <div class="col-md mb-3">
+        <div class="row mx-5">
+          <div class="col-md mb-3">
             <input type="email" name="email" id="email" class="form-control" required placeholder="email">
-        </div>
-        <div class="col-md mb-3">
+          </div>
+          <div class="col-md mb-3">
             <input type="text" name="tel" id="tel" class="form-control" required placeholder="telefono móvil">
+          </div>
         </div>
-      </div>
 
-      <div class="row mx-5">
-        <div class="col-md mb-3">
-          <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calcularPrecioTotal()" class="form-control" required placeholder="Cantidad de Entradas" min="1" max="15">
-          <small>Valor Conferencia $5000</small>
+        <div class="row mx-5">
+          <div class="col-md mb-3">
+            <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calcularPrecioTotal()"
+              class="form-control" required placeholder="Cantidad de Entradas" min="1" max="15">
+            <small>Valor Conferencia $5000</small>
+          </div>
+          <div class="col-md mb-3">
+            <select class="form-select" id="porcDescuento" onchange="calcularPrecioTotal()">
+              <option value="10">Particular</option>
+              <option value="30">Estudiante</option>
+              <option value="50">Orador</option>
+            </select>
+          </div>
+          <div class="col-md mb-3">
+            <input type="text" name="precioFinal" id="precioFinal" class="form-control mb-2" disabled
+              placeholder="Precio de entradas con descuento">
+            <div id="precionFinal2" class="bg-secondary p-2 rounded text-light">Precio final</div>
+          </div>
         </div>
-        <div class="col-md mb-3">
-          <select class="form-select" id="porcDescuento" onchange="calcularPrecioTotal()" >
-            <option value="10">Particular</option>
-            <option value="30">Estudiante</option>
-            <option value="50">Orador</option>
-          </select>          
-        </div>
-        <div class="col-md mb-3">
-          <input type="text" name="precioFinal" id="precioFinal" class="form-control mb-2" disabled placeholder="Precio de entradas con descuento">
-          <div id="precionFinal2" class="bg-secondary p-2 rounded text-light">Precio final con descuento</div>
-        </div>
-      </div>
-        <button type="submit" class="btn btn-primary mt-2 my-3" id="enviar">Comprar</button>
-    </form>
-  </div>
+
+        <button type="submit" class="btn btn-primary d-grid gap-2 col-6 mx-auto mb-3 pb-3">Comprar</button>
+      </form>
+    </div>
   </section>
- 
-  <section id="footer" class="bg-dark ">
+
+  <section id="footer" class="bg-dark pt3 ">
     <footer class="footer bg-black small text-center">
       <ul class="list-inline footer">
         <li class="list-inline-item footer-menu"><a href="#oradores">Oradores</a></li>
-        <li class="list-inline-item footer-menu"><a href="#codoacodo">Programa</a></li>
+        <li class="list-inline-item footer-menu"><a href="#lugar">Programa</a></li>
         <li class="list-inline-item footer-menu"><a href="#comprar">Tickets</a></li>
       </ul>
       <div class="container px-4 px-lg-5">
